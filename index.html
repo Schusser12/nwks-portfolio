@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Osobni portfolio izrađen kao završni projekt iz kolegija Napredna web korisnička sučelja.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zlatko Abramović - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="navbar">
+    <div class="logo">Moj Portfolio</div>
+
+    <nav>
+      <a href="index.html" class="active">Početna</a>
+      <a href="o-meni.html">O meni</a>
+      <a href="vjestine.html">Vještine</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </div>
+
+  <section class="hero">
+    <img src="zlatko-slika.jpg" alt="Zlatko Abramović" class="profile-photo">
+
+    <div>
+      <h1>Zlatko Abramović</h1>
+      <p>
+        Linux system administrator iz Zagreba. Najviše me zanimaju Linux sustavi,
+        Bash skripte, automatizacija i analiza problema na web okruženjima.
+      </p>
+      <a class="button" href="o-meni.html">Saznaj više</a>
+    </div>
+  </section>
+</header>
+
+<main>
+  <section class="section">
+    <h2>Dobrodošli</h2>
+
+    <p>
+      Ovo je moj osobni portfolio napravljen kao završni projekt iz kolegija
+      Napredna web korisnička sučelja. Stranica je zamišljena kao jednostavno
+      web mjesto koje ukratko prikazuje tko sam, čime se bavim i koje vještine
+      koristim u svakodnevnom radu.
+    </p>
+
+    <p>
+      Nisam htio napraviti stranicu koja je prenatrpana efektima ili nepotrebnim
+      sadržajem. Cilj mi je bio napraviti uredan i pregledan portfolio s jasnom
+      navigacijom, čitljivim tekstom i jednostavnim rasporedom.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Kratko o meni</h2>
+
+    <p>
+      Zovem se Zlatko Abramović, imam 25 godina i živim u Zagrebu. Već nekoliko
+      godina radim kao Linux system administrator. Kroz posao sam se najviše
+      susretao s radom na serverima, analizom logova, provjerom servisa i
+      rješavanjem tehničkih problema.
+    </p>
+
+    <p>
+      Najviše volim praktičan dio IT-a, posebno rad u terminalu i automatizaciju.
+      Bash skripte mi najviše pomažu kod ponavljajućih zadataka, kao što su pretraga logova,
+      provjera procesa, pregled prometa i osnovne sigurnosne provjere.
+    </p>
+	
+	<div class="terminal-card">
+     <div class="terminal-top">
+      <span></span>
+      <span></span>
+      <span></span>
+     </div>
+
+     <div class="terminal-body">
+      <p><span>$</span> grep -i "Modsecurity" /var/log/httpd/error.log</p>
+      <p><span>$</span> bash CSLreview.sh</p>
+      <p><span>$</span> sudo service nginx status</p>
+      <p class="terminal-ok">Active(running)</p>
+    </div>
+  </div>
+
+  </section>
+
+  <section class="cards">
+    <article class="card">
+      <h3>Linux administracija</h3>
+      <p>
+        Rad sa serverima, servisima, procesima, logovima i osnovnim
+        administrativnim zadacima u Linux okruženju.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Bash skripte</h3>
+      <p>
+        Pisanje skripti za automatizaciju provjera, izdvajanje korisnih podataka
+        iz logova i brže snalaženje u terminalu.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Web i sigurnost</h3>
+      <p>
+        Osnove HTML-a, CSS-a i JavaScripta, uz interes za malware investigation,
+        traffic investigation i analizu web okruženja.
+      </p>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Što radim</h2>
+
+    <p>
+      U poslu se često bavim analizom problema koji nisu odmah vidljivi na prvi
+      pogled. To uključuje pregled logova, traženje neuobičajenog prometa,
+      provjeru procesa, pronalazak sumnjivih datoteka i provjeru rada servisa.
+    </p>
+
+    <p>
+      Neki moji radovi i skripte su javni, dok su drugi vezani uz interni rad,
+      primjerice za malware investigation i traffic investigation. Takve skripte
+      nisu javno dostupne, ali su dobar primjer kako se automatizacijom može
+      ubrzati analiza problema.
+    </p>
+
+    <div class="github-box">
+      <p>
+        Moj GitHub profil:
+        <a href="https://github.com/Schusser12" target="_blank">github.com/Schusser12</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Tehnologije korištene na stranici</h2>
+
+    <p>
+      Ova stranica napravljena je kao statičko web mjesto. HTML je korišten za
+      strukturu stranice, CSS za izgled i raspored elemenata, a JavaScript za
+      jednostavnu interakciju na kontakt formi.
+    </p>
+
+    <span class="badge">HTML</span>
+    <span class="badge">CSS</span>
+    <span class="badge">JavaScript</span>
+    <span class="badge">Linux</span>
+    <span class="badge">Bash</span>
+    <span class="badge">Log analysis</span>
+    <span class="badge">UX osnove</span>
+  </section>
+
+  <section class="section">
+    <h2>O dizajnu stranice</h2>
+
+    <p>
+      Dizajn je namjerno jednostavan. Koristi se sans-serif font jer je čitljiv
+      na ekranu, a boje su plava, bijela i svijetlosiva. Plava boja daje
+      ozbiljniji i profesionalniji dojam, dok svijetla pozadina olakšava čitanje.
+    </p>
+
+    <p>
+      Navigacija se nalazi na vrhu stranice kako bi korisnik odmah mogao otvoriti
+      sve glavne dijelove web mjesta: početnu stranicu, informacije o meni,
+      vještine i kontakt.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Struktura web mjesta</h2>
+
+    <p>
+      Web mjesto se sastoji od početne stranice i tri podstranice. Na stranici
+      <strong>O meni</strong> nalaze se osobne informacije i interesi. Stranica
+      <strong>Vještine</strong> prikazuje područja s kojima imam najviše iskustva,
+      dok se na stranici <strong>Kontakt</strong> nalaze osnovni kontakt podaci i
+      jednostavna kontakt forma.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Zlatko Abramović - Završni projekt iz kolegija Napredna web korisnička sučelja</p>
+</footer>
+
+</body>
+</html>
