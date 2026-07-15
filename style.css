@@ -47,6 +47,7 @@ header {
   grid-template-columns: 190px 1fr;
   gap: 30px;
   align-items: center;
+  border-radius: 24px;
 }
 
 .logo {
@@ -332,10 +333,4 @@ footer {
 
 .terminal-ok {
   color: #86efac;
-}
-
-@media (max-width: 800px) {
-  .terminal-section {
-    grid-template-columns: 1fr;
-  }
 }
